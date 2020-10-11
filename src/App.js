@@ -2,11 +2,15 @@ import React from 'react';
 
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import Sidebar from './Sidebar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Buid a Discord Clone</h1>
+    //BEM meaningful naming!
+    <div className="App">      
+      {/* SideBar */}
+      <Sidebar/>
+      {/* Chat */}
     </div>
   );
 }
