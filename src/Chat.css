@@ -40,6 +40,17 @@
   padding:5px;
 }
 
+.chat__messages::-webkit-scrollbar{
+  display:none;
+
+}
+
 .chat__messages{
+  overflow:scroll;
   flex:1;
+}
+
+.chat__messages{
+  -ms-overflow-style:none;
+  scrollbar-width:none;
 }

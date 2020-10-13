@@ -6,7 +6,8 @@ import PeopleAltRoundedIcon from '@material-ui/icons/PeopleAltRounded';
 import SearchRoundedIcon from '@material-ui/icons/SearchRounded';
 import SendRoundedIcon from '@material-ui/icons/SendRounded';
 import HelpOutlineRoundedIcon from '@material-ui/icons/HelpOutlineRounded';
-export default function ChatHeader() {
+
+export default function ChatHeader({channelName}) {
   return (
     <div className="chatHeader" >
       
@@ -15,13 +16,13 @@ export default function ChatHeader() {
           <span className="chatHeader__hash">
             #
           </span>
-          txt channel name
+          {channelName}
         </h3>
       </div>
       <div className="chatHeader__right">
-        <NotificationsIcon/>
-        <EditLocationIcon/>
-        <PeopleAltRoundedIcon/>
+        <NotificationsIcon />
+        <EditLocationIcon />
+        <PeopleAltRoundedIcon />
 
 
 
